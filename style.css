@@ -18,6 +18,7 @@ body {
     letter-spacing: 6px;
     line-height: 100%%;
     text-align: justify;
+     animation: crawl 50s linear;
 }
 
 p {
@@ -31,7 +32,7 @@ p {
 .crawl {
     position: relative;
     top: -100px;
-    animation: crawl 50s linear;
+   
     transform-origin: 50% 100%;
 
 
