@@ -9,7 +9,12 @@ body {
     
 }
 
-
+img {
+  margin: auto;
+    z-index:100;
+    width: auto;
+        
+}
 .fade {
     
     position: absolute;
