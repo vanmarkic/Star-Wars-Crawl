@@ -4,16 +4,18 @@ body {
     background: #000;
     overflow: hidden;
     background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/44216/stars-img-src.svg);
-    background-size: auto;
+    background-size: cover;
+    margin: 0;
     
 }
 
+
 .fade {
-    position: relative;
+    
+    position: absolute;
     width: 100%;
-    min-height: 60vh;
-    top: -25px;
-    background-image: linear-gradient(0deg, transparent, black 75%);
+    min-height: 70vh;
+      background-image: linear-gradient(0deg, transparent, black 75%);
     z-index: 1;
 }
 
@@ -27,10 +29,10 @@ body {
     font-variant-caps: all-petite-caps;
     font-size: 100px;
     font-weight: 700;
+    font-stretch: ultra-expanded;
     letter-spacing: 6px;
-    line-height: 120%;
-    /*  perspective: 150px;*/
-    text-align: justify;
+    line-height: 90%;
+  text-align: justify;
     perspective: 200px;
 
     animation: pers 50s linear infinite;
@@ -39,8 +41,7 @@ body {
 .crawl {
     position: relative;
     top: 9999px;
-    transform-origin: 50% 100%;
-    animation: crawl 50s linear infinite;
+    animation: crawl 120s linear infinite;
 }
 
 
@@ -59,23 +60,15 @@ body {
 
 
 
-
-
-
-/*
-@-webkit-keyframes pers {
-
-    0%,
-    from {
-        -webkit-transform: perspective(200px) rotatex(0deg);
+@-webkit-keyframes crawl {
+    0% {
+        top: -100px;
+        transform: rotateX(20deg) translateZ(0) ;
     }
-
-
-    100%,
-    to {
-        -webkit-transform: perspective(20px)
-            rotatex(100deg);
+   
+    100% {
+        top: -6000px;
+        transform: rotateX(25deg) translateZ(-2500px)
+            ;
     }
 }
-*/
-
