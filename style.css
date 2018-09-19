@@ -33,22 +33,23 @@ body {
     letter-spacing: 6px;
     line-height: 90%;
   text-align: justify;
-    perspective: 200px;
+    perspective: 100px;
+     
 
     animation: pers 50s linear infinite;
 }
 
 .crawl {
-    position: relative;
-    top: 9999px;
+    position: relative;  
     animation: crawl 120s linear infinite;
 }
+   
 
 
-@keyframes crawl {
+@-webkit-keyframes crawl {
     0% {
-        top: -100px;
-        transform: rotateX(20deg) translateZ(0) ;
+        top: 1000px;
+        transform: rotateX(20deg) translateZ(100px) ;
     }
    
     100% {
@@ -60,6 +61,7 @@ body {
 
 
 
+/*
 @-webkit-keyframes crawl {
     0% {
         top: -100px;
@@ -71,4 +73,4 @@ body {
         transform: rotateX(25deg) translateZ(-2500px)
             ;
     }
-}
+}*/
