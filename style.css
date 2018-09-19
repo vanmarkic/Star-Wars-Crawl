@@ -1,34 +1,26 @@
-body {
-    width: 100%;
-    height: 100%;
-    background: #000;
+body {      
+    margin: 0;    
     overflow: hidden;
     background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/44216/stars-img-src.svg);
     background-size: cover;
-    margin: 0;
-    
-}
+    }
 
-img {
-  margin: auto;
-    z-index:100;
-    width: auto;
-        
-}
+
 .fade {
-    
     position: absolute;
     width: 100%;
-    min-height: 800px;
-      background-image: linear-gradient(0deg, transparent, black 100%);
-/*    z-index: 1;*/
+    height: 80%;
+    background: linear-gradient(0deg, transparent, black 50%);
+    z-index: 1;
 }
 
 .star-wars {
-    display: flex;
-    justify-content: center;
     position: relative;
-    height: 800px;
+    display: flex;
+
+    height: 800px;   
+  margin: -100px;
+  
     color: #feda4a;
     font-family: 'News Cycle', sans-serif;
     font-variant-caps: all-petite-caps;
@@ -39,43 +31,33 @@ img {
     line-height: 90%;
   text-align: justify;
     perspective: 100px;
-     
-
-    animation: pers 50s linear infinite;
-}
+     }
 
 .crawl {
     position: relative;  
-    animation: crawl 120s linear infinite;
+        width: 200%;
+    
+    animation: generique 120s linear infinite;
+    
+  
 }
    
 
 
-@-webkit-keyframes crawl {
-    0% {
+@-webkit-keyframes generique {
+    from {
         top: 1000px;
         transform: rotateX(20deg) translateZ(100px) ;
+        
     }
-   
-    100% {
+    
+        
+    to {
         top: -6000px;
-        transform: rotateX(25deg) translateZ(-2500px)
-            ;
+        transform: rotateX(25deg) translateZ(-2500px)            ;
+   
     }
 }
 
 
 
-/*
-@-webkit-keyframes crawl {
-    0% {
-        top: -100px;
-        transform: rotateX(20deg) translateZ(0) ;
-    }
-   
-    100% {
-        top: -6000px;
-        transform: rotateX(25deg) translateZ(-2500px)
-            ;
-    }
-}*/
